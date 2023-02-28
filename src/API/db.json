@@ -1,0 +1,97 @@
+{
+    "slider": [
+        {
+            "id": 1,
+            "img": "http://127.0.0.1:5500/assets/slider-3.jpeg",
+            "title": "Khóa học 1"
+        },
+        {
+            "id": 2,
+            "img": "https://splidejs.com/images/slides/general/02.jpg",
+            "title": "Khóa học 2"
+        },
+        {
+            "id": 3,
+            "img": "https://splidejs.com/images/slides/general/03.jpg",
+            "title": "Khóa học 3"
+        },
+        {
+            "id": 4,
+            "img": "https://splidejs.com/images/slides/general/06.jpg",
+            "title": "Khóa học 4"
+        },
+        {
+            "id": 5,
+            "img": "https://splidejs.com/images/slides/general/08.jpg"
+        }
+    ],
+    "courseCategories": [
+        {
+            "id": 1,
+            "title": "Khóa học free",
+            "createAt": "2023-02-29 17:19:48"
+        },
+        {
+            "id": 2,
+            "title": "Khóa học chuyên sâu",
+            "createAt": "2023-02-29 17:19:48"
+        },
+        {
+            "id": 3,
+            "title": "Khóa học nổi bật",
+            "createAt": "2023-02-29 17:19:48"
+        },
+        {
+            "id": 4,
+            "title": "Khóa học test",
+            "createAt": "2023-02-29 17:19:48"
+        },
+        {
+            "id": 5,
+            "title": "Khóa học test 2",
+            "createAt": "2023-02-29 17:19:48"
+        }
+    ],
+    "courses": [
+        {
+            "id": 1,
+            "categoryId": 1,
+            "name": "Học Family MEP cơ bản"
+        },
+        {
+            "id": 2,
+            "categoryId": 1,
+            "name": "Học Revit MEP từ con số 0"
+        },
+        {
+            "id": 3,
+            "categoryId": 1,
+            "name": "Nền tảng lập trình Dynamo"
+        },
+        {
+            "id": 4,
+            "categoryId": 1,
+            "name": "Diễn họa Enscape trong Revit"
+        },
+        {
+            "id": 5,
+            "categoryId": 2,
+            "name": "Tạo thư viện Family MEP 3D"
+        },
+        {
+            "id": 6,
+            "categoryId": 2,
+            "name": "Sức mạnh của Dynamo MEP"
+        },
+        {
+            "id": 7,
+            "categoryId": 2,
+            "name": "Revit MEP full các hệ Cơ điện"
+        },
+        {
+            "id": 8,
+            "categoryId": 2,
+            "name": "Naviswork – Xử lý xung đột"
+        }
+    ]
+}

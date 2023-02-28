@@ -1,4 +1,6 @@
 import React from "react";
+import FeatureCourses from "./Components/FeatureCourses/FeatureCourses";
+import Slider from "./Components/Slider/Slider";
 import "./Home.scss";
 
 const Home = () => {
@@ -9,7 +11,8 @@ const Home = () => {
           <div class="row">
             <div class="d-none d-md-block col-md-4 col-lg-3">
               <div class="banner-left">
-                <div class="course-group">
+                <FeatureCourses />
+                {/* <div class="course-group">
                   <p>khoá học free</p>
                   <ul>
                     <li>
@@ -62,20 +65,12 @@ const Home = () => {
                       <a href="#">Nền tảng lập trình Dynamo</a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
             <div class="col-12 col-md-8 col-lg-6">
-              <div class="banner-slider">
-                <div class="banner-slider-inner">
-                  <img src="../assets/slider-1.jpeg" alt="" />
-                </div>
-                <div class="banner-slider-inner">
-                  <img src="../assets/slider-2.jpeg" alt="" />
-                </div>
-                <div class="banner-slider-inner">
-                  <img src="../assets/slider-3.jpeg" alt="" />
-                </div>
+              <div className="slider__container">
+                <Slider />
               </div>
             </div>
             <div class="d-none d-lg-block col-lg-3">
