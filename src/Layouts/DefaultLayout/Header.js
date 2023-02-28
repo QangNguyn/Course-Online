@@ -60,44 +60,37 @@ const Header = () => {
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
-                  <i class="fas fa-home"></i>
-                  Home
+                  <i class="fas fa-home"></i> Home
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fas fa-tv"></i>
-                  Khóa học
+                  <i class="fas fa-tv"></i> Khóa học
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fas fa-route"></i>
-                  Lộ trình
+                  <i class="fas fa-route"></i> Lộ trình
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fas fa-globe-europe"></i>
-                  Kiến thức
+                  <i class="fas fa-globe-europe"></i> Kiến thức
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fas fa-star"></i>
-                  Tuyển dụng
+                  <i class="fas fa-star"></i> Tuyển dụng
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fas fa-broadcast-tower"></i>
-                  CTV
+                  <i class="fas fa-broadcast-tower"></i> CTV
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fas fa-user"></i>
-                  DSCons
+                  <i class="fas fa-user"></i> DSCons
                 </a>
               </li>
             </ul>
