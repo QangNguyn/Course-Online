@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.scss";
 
 const Header = () => {
+  const [menu, setMenu] = useState();
+  const getMenu = async () => {
+    const res = await fetch("http://localhost:3004/menu");
+    const data = await res.json();
+    setMenu(data);
+  };
+  useEffect(() => {
+    getMenu();
+  }, []);
   return (
     <header class="header">
       <div class="action-bar">
@@ -58,41 +67,13 @@ const Header = () => {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="fas fa-home"></i> Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-tv"></i> Khóa học
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-route"></i> Lộ trình
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-globe-europe"></i> Kiến thức
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-star"></i> Tuyển dụng
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-broadcast-tower"></i> CTV
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-user"></i> DSCons
-                </a>
-              </li>
+              {menu?.map((item) => (
+                <li class="nav-item" key={item.id}>
+                  <a class="nav-link" href={item.url}>
+                    <i class="fas fa-user"></i> {item.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <p class="cart">
