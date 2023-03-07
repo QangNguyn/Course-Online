@@ -1,5 +1,4 @@
 import React from "react";
-import FeatureCourses from "./Components/FeatureCourses/FeatureCourses";
 import Slider from "./Components/Slider/Slider";
 import "./Home.scss";
 
@@ -11,7 +10,7 @@ const Home = () => {
           <div class="row">
             <div class="d-none d-md-block col-md-4 col-lg-3">
               <div class="banner-left">
-                <FeatureCourses />
+                {/* <FeatureCourses /> */}
                 {/* <div class="course-group">
                   <p>khoá học free</p>
                   <ul>
